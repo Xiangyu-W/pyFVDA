@@ -6,4 +6,4 @@ build-backend = "setuptools.build_meta"
 # Choose a configuration that suits your project's versioning style
 version_scheme = "guess-next-dev"
 local_scheme = "no-local-version"
-write_to = "src/pyFVDA/_version.py"
+# write_to = "src/pyFVDA/_version.py"
