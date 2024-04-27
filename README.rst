@@ -23,27 +23,37 @@
         :alt: Twitter
         :target: https://twitter.com/pyFVDA
 
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
-    :alt: Project generated with PyScaffold
-    :target: https://pyscaffold.org/
+.. .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
+..     :alt: Project generated with PyScaffold
+..     :target: https://pyscaffold.org/
 
-|
+.. |
 
 ======
 pyFVDA
 ======
 
+Intro
+=====
 
-    Add a short description here!
+This is a Python package of the Fractional Velocity Dispersion Analysis (FVDA) for analyzing Solar Energetic Electron (SEE) events.
 
+Dependencies
+============
 
-A longer description of your project goes here...
+pyFVDA utilizes a python interface of Coordinated Data Analysis Web (CDAWeb), namely cdasws, to obtain data from the web server. cdasws relies on two libraries, spacepy and cdflib. Therefore, before installing pyFVDA, please first check whether the installation `requirements of cdasws <https://pypi.org/project/cdasws/>`_ are met.
 
+Installation
+============
 
-.. _pyscaffold-notes:
+pyFVDA can be installed from PyPi using::
 
-Note
-====
+    pip install pyFVDA
 
-This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+This will install pyFVDA and all of its dependencies. Since this package is currently in an early version and is still under development, We recommend installing pyFVDA in a new virtual environment.
+
+Documentation
+=============
+
+Detailed descriptions & examples Will be added soon.
+
