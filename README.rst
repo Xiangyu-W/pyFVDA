@@ -46,14 +46,14 @@ pyFVDA utilizes a python interface of Coordinated Data Analysis Web (CDAWeb), na
 Installation
 ============
 
-pyFVDA can be installed from PyPi using::
+Currently, pyFVDA can be installed from Github using::
 
-    pip install pyFVDA
+    pip install git+https://github.com/Xiangyu-W/pyFVDA.git
 
 This will install pyFVDA and all of its dependencies. Since this package is currently in an early version and is still under development, We recommend installing pyFVDA in a new virtual environment.
 
 Documentation
 =============
 
-Detailed descriptions & examples Will be added soon.
+Detailed descriptions & examples will be added soon.
 
