@@ -16,6 +16,7 @@ class EventProcessor:
         self.event_list = event_list
         self.idx = idx
         self.eventPath = ''
+        print(f"Event_{self.event_list.loc[ self.idx-1,'SC']}({self.event_list.loc[ self.idx-1,'start time']}) is selected.")
     
     def load_fromPickle(file_path):
         """Deserializes and loads an EventProcessor instance from a pickle file.
@@ -35,7 +36,7 @@ class EventProcessor:
         #  Event name & path
         event_info = self.event_list.loc[self.idx - 1]
         t_range = [i.strftime('%Y-%m-%dT%H:%M:%SZ') for i in event_info[['start time', 'end time']].to_list()]
-        directionID = [event_info['pitch angle']]
+        directionID = [event_info['pitch angle bin']]
         SC = event_info['SC']
         onsetHour = event_info['hour']
         
@@ -66,7 +67,7 @@ class EventProcessor:
         # event.Filter(initial_WindowSize, polyorder, timeForFvda = [str, str])
         # plot_button = self.event.Filter([19]*6, polyorder=[2]*6, timeForFvda = ['2021-10-09 06:00:00', '2021-10-09 10:00:00'])
         plot_button = self.event.Filter(initial_WindowSize, polyorder, timeForFvda)
-        print('! Specify: "bins, background range, peak range" before call the "getTime_eta" method.')
+        print('!Remember to Specify: "bins, background range, peak range" before call the "getTime_eta" method.')
         return plot_button # Return the plot button is to ensure the interactive interface can be used.
 
     def getTime_eta(self, bgRange, peakRange, binsForFvda, eta, specialBg={}):
@@ -110,7 +111,9 @@ class EventProcessor:
         
         # plot extra data in the same figure
         if plotExtraData is not None:
-            plotExtraData.plot_on_axes(ax)
+            for obj in plotExtraData.values():
+                obj.plot_on_axes(ax)
+            # plotExtraData.plot_on_axes(ax)
         
         # Save the figure
         if self.event.savefig:
