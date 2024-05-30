@@ -41,7 +41,8 @@ This is a Python package of the Fractional Velocity Dispersion Analysis (FVDA) f
 Dependencies
 ============
 
-pyFVDA utilizes a python interface of Coordinated Data Analysis Web (CDAWeb), namely cdasws, to obtain data from the web server. cdasws relies on two libraries, spacepy and cdflib. Therefore, before installing pyFVDA, please first check whether the installation `requirements of cdasws <https://pypi.org/project/cdasws/>`_ are met.
+pyFVDA utilizes a python interface of Coordinated Data Analysis Web (CDAWeb), namely cdasws, to obtain data from the web server.
+The data is usually in the Common Data Format (CDF), which requires `cdflib <https://pypi.org/project/cdflib/>`_ or `CDF NASA Library <https://cdf.gsfc.nasa.gov/>`_ to read/write. Therefore, please ensure you have at least one of these libraries before using the pyFVDA.
 
 Installation
 ============
@@ -50,7 +51,10 @@ Currently, pyFVDA can be installed from Github using::
 
     pip install git+https://github.com/Xiangyu-W/pyFVDA.git
 
-This will install pyFVDA and all of its dependencies. Since this package is currently in an early version and is still under development, We recommend installing pyFVDA in a new virtual environment.
+This will install pyFVDA and all of its dependencies. We recommend installing pyFVDA in a new virtual environment in case of conflicts between the packages. 
+
+The recommended version of Python::
+    python_requires = >=3.8.13
 
 Documentation
 =============
