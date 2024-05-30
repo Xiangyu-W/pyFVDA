@@ -53,8 +53,12 @@ Currently, pyFVDA can be installed from Github using::
 
 This will install pyFVDA and all of its dependencies. We recommend installing pyFVDA in a new virtual environment in case of conflicts between the packages. 
 
+
 The recommended version of Python::
+
     python_requires = >=3.8.13
+
+
 
 Documentation
 =============
