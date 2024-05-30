@@ -70,6 +70,6 @@ A detailed explanation of the FVDA method can be found in the following papers:
 
     * Lulu Zhao, Gang Li, Ming Zhang, et al. `Statistical Analysis of Interplanetary Magnetic Field Path Lengths from Solar Energetic Electron Events Observed by WIND <https://doi.org/10.3847/1538-4357/ab2041>`_. The Astrophysical Journal, 878:107 (9pp), 2019 June 20.*
 
-    * Xiangyu Wu, Gang Li, Lulu Zhao, et al. `Statistical Study of Release Time and Its Energy Dependence of In Situ Energetic Electrons in Impulsive Solar Flares <https://doi.org/10.1029/2022JA030939>`_. Journal ofGeophysical Research: Space Physics,128, e2022JA030939.*
+    * Xiangyu Wu, Gang Li, Lulu Zhao, et al. `Statistical Study of Release Time and Its Energy Dependence of In Situ Energetic Electrons in Impulsive Solar Flares <https://doi.org/10.1029/2022JA030939>`_. Journal of Geophysical Research: Space Physics,128, e2022JA030939.*
     
 

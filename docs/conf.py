@@ -72,6 +72,7 @@ extensions = [
     "sphinx.ext.ifconfig",
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
+    'sphinx_rtd_theme'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -88,6 +89,8 @@ master_doc = "index"
 
 # General information about the project.
 project = "pyFVDA"
+author = 'Xiangyu Wu'
+release = '0.1.0'
 copyright = "2024, xw"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -153,7 +156,8 @@ todo_emit_warnings = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "alabaster"
+# html_theme = "alabaster"
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
