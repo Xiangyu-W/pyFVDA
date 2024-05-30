@@ -47,7 +47,7 @@ The data is usually in the Common Data Format (CDF), which requires `cdflib <htt
 Installation
 ============
 
-Currently, pyFVDA can be installed from Github using::
+Once the CDF Library is installed, the pyFVDA can be installed from Github using::
 
     pip install git+https://github.com/Xiangyu-W/pyFVDA.git
 
@@ -66,7 +66,7 @@ Documentation
 The detailed description document for the pyFVDA will be updated soon. 
 A running example and the brief introduction of the package can be found `here <https://colab.research.google.com/github/Xiangyu-W/pyFVDA/blob/main/docs/example_pyFVDA.ipynb>`_. 
 
-A detailed explanation of the FVDA method can be found in the following paper:
+A detailed explanation of the FVDA method can be found in the following papers:
 
     * Lulu Zhao, Gang Li, Ming Zhang, et al. `Statistical Analysis of Interplanetary Magnetic Field Path Lengths from Solar Energetic Electron Events Observed by WIND <https://doi.org/10.3847/1538-4357/ab2041>`_. The Astrophysical Journal, 878:107 (9pp), 2019 June 20.*
 
