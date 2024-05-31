@@ -14,10 +14,6 @@ import shutil
 # -- Path setup --------------------------------------------------------------
 
 __location__ = os.path.dirname(__file__)
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.join(__location__, "../src"))
 
 # -- Run sphinx-apidoc -------------------------------------------------------
@@ -91,7 +87,7 @@ master_doc = "index"
 project = "pyFVDA"
 author = 'Xiangyu Wu'
 release = '0.1.0'
-copyright = "2024, xw"
+# copyright = "2024, xw"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -249,9 +245,9 @@ latex_elements = {
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-    ("index", "user_guide.tex", "pyFVDA Documentation", "xw", "manual")
-]
+# latex_documents = [
+#     ("index", "user_guide.tex", "pyFVDA Documentation", "xw", "manual")
+# ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -273,18 +269,18 @@ latex_documents = [
 # If false, no module index is generated.
 # latex_domain_indices = True
 
-# -- External mapping --------------------------------------------------------
-python_version = ".".join(map(str, sys.version_info[0:2]))
-intersphinx_mapping = {
-    "sphinx": ("https://www.sphinx-doc.org/en/master", None),
-    "python": ("https://docs.python.org/" + python_version, None),
-    "matplotlib": ("https://matplotlib.org", None),
-    "numpy": ("https://numpy.org/doc/stable", None),
-    "sklearn": ("https://scikit-learn.org/stable", None),
-    "pandas": ("https://pandas.pydata.org/pandas-docs/stable", None),
-    "scipy": ("https://docs.scipy.org/doc/scipy/reference", None),
-    "setuptools": ("https://setuptools.pypa.io/en/stable/", None),
-    "pyscaffold": ("https://pyscaffold.org/en/stable", None),
-}
+# # -- External mapping --------------------------------------------------------
+# python_version = ".".join(map(str, sys.version_info[0:2]))
+# intersphinx_mapping = {
+#     "sphinx": ("https://www.sphinx-doc.org/en/master", None),
+#     "python": ("https://docs.python.org/" + python_version, None),
+#     "matplotlib": ("https://matplotlib.org", None),
+#     "numpy": ("https://numpy.org/doc/stable", None),
+#     "sklearn": ("https://scikit-learn.org/stable", None),
+#     "pandas": ("https://pandas.pydata.org/pandas-docs/stable", None),
+#     "scipy": ("https://docs.scipy.org/doc/scipy/reference", None),
+#     "setuptools": ("https://setuptools.pypa.io/en/stable/", None),
+#     "pyscaffold": ("https://pyscaffold.org/en/stable", None),
+# }
 
-print(f"loading configurations for {project} {version} ...", file=sys.stderr)
+# print(f"loading configurations for {project} {version} ...", file=sys.stderr)
