@@ -63,7 +63,7 @@ The recommended version of Python::
 Documentation
 =============
 
-A running example and the brief introduction of the package can be found `here <https://colab.research.google.com/github/Xiangyu-W/pyFVDA/blob/main/docs/example_pyFVDA.ipynb>`_. 
+A running example and the brief introduction of the package can be found `here <https://colab.research.google.com/github/Xiangyu-W/pyFVDA/blob/main/Example/example_pyFVDA.ipynb>`_. 
 The detailed description document for the pyFVDA will be updated soon. 
 
 A detailed explanation of the FVDA method can be found in the following papers:
